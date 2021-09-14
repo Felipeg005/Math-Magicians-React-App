@@ -1,65 +1,64 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
-
-# Project Name
-
-> One paragraph statement about the project.
+## Math Magicians App
 
 ![screenshot](./app_screenshot.png)
 
-Additional description about the project and its features.
-
-## Built With
-
-- Major languages
-- Frameworks
-- Technologies used
-
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
-
+[Visit Live Demo Link](https://felipeg005.github.io/Math-Magicians-App/)
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+You can visit the Live Demo or clone the repository and open the dist/html.index file with your browser to see the project.
 
-
-To get a local copy up and running follow these simple example steps.
+- Follow the [Set-up and Install](#set-up--install) instructions.
 
 ### Prerequisites
 
-### Setup
+- Before we begin, make sure you have a fresh version of Node.js installed
 
-### Install
+### Set-up & Install
 
-### Usage
+- [First clone the repo](https://github.com/Felipeg005/Math-Magicians-App/) and checkout the latest branch.
 
-### Run tests
+To install the latest release or a specific version, run one of the following commands:
 
-### Deployment
+- `npm install && npm install --dev` to install the project's dependencies.
 
+## Available Scripts
 
+In the project directory, you can run:
 
-## Authors
+`npm start`
 
-👤 **Author1**
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-👤 **Author2**
+`npm test`
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## 🤝 Contributing
+`npm run build`
 
-Contributions, issues, and feature requests are welcome!
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-Feel free to check the [issues page](../../issues/).
+## Built With
+
+- JavaScript-Webpack-Jest-React
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## 👤 **Author**
+
+**Juan Felipe Gomez Tobon**
+
+- GitHub: [@githubhandle](https://github.com/Felipeg005/)
+- Twitter: [@twitterhandle](https://twitter.com/JuanFGT05)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/juan-felipe-gomez-tobon/)
 
 ## Show your support
 
@@ -67,9 +66,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Thanks to Microverse for making it possible!
 
 ## 📝 License
 
