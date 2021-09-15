@@ -3,9 +3,10 @@ import React from 'react'; // eslint-disable-line
 class Calculator extends React.Component {
   render() {
     return (
+      this.props,
       <main className='calculator-container'>
         <div className='display-board'>0</div>
-        <button className='s-button'>{this.props}AC</button>
+        <button className='s-button'>AC</button>
         <button className='s-button'>+/-</button>
         <button className='s-button'>%</button>
         <button className='s-orange-button'>÷</button>
