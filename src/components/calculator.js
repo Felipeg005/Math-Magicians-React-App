@@ -9,7 +9,6 @@ class Calculator extends React.Component {
       next: null,
       operation: null,
     };
-    // this.displayBoard = this.displayBoard.bind(this);
   }
 
   async displayBoard(e) {
