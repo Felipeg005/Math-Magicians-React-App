@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/Math-Magicians-React-App/static/css/main.467c22ed.chunk.css",
-    "main.js": "/Math-Magicians-React-App/static/js/main.5e47a6b1.chunk.js",
-    "main.js.map": "/Math-Magicians-React-App/static/js/main.5e47a6b1.chunk.js.map",
-    "runtime-main.js": "/Math-Magicians-React-App/static/js/runtime-main.ae5d11ee.js",
-    "runtime-main.js.map": "/Math-Magicians-React-App/static/js/runtime-main.ae5d11ee.js.map",
-    "static/js/2.7eb46e68.chunk.js": "/Math-Magicians-React-App/static/js/2.7eb46e68.chunk.js",
-    "static/js/2.7eb46e68.chunk.js.map": "/Math-Magicians-React-App/static/js/2.7eb46e68.chunk.js.map",
-    "static/js/3.7f8f3d04.chunk.js": "/Math-Magicians-React-App/static/js/3.7f8f3d04.chunk.js",
-    "static/js/3.7f8f3d04.chunk.js.map": "/Math-Magicians-React-App/static/js/3.7f8f3d04.chunk.js.map",
+    "main.js": "/Math-Magicians-React-App/static/js/main.81015e83.chunk.js",
+    "main.js.map": "/Math-Magicians-React-App/static/js/main.81015e83.chunk.js.map",
+    "runtime-main.js": "/Math-Magicians-React-App/static/js/runtime-main.32baeffc.js",
+    "runtime-main.js.map": "/Math-Magicians-React-App/static/js/runtime-main.32baeffc.js.map",
+    "static/js/2.af4db958.chunk.js": "/Math-Magicians-React-App/static/js/2.af4db958.chunk.js",
+    "static/js/2.af4db958.chunk.js.map": "/Math-Magicians-React-App/static/js/2.af4db958.chunk.js.map",
+    "static/js/3.83b30065.chunk.js": "/Math-Magicians-React-App/static/js/3.83b30065.chunk.js",
+    "static/js/3.83b30065.chunk.js.map": "/Math-Magicians-React-App/static/js/3.83b30065.chunk.js.map",
     "index.html": "/Math-Magicians-React-App/index.html",
     "static/css/main.467c22ed.chunk.css.map": "/Math-Magicians-React-App/static/css/main.467c22ed.chunk.css.map",
-    "static/js/2.7eb46e68.chunk.js.LICENSE.txt": "/Math-Magicians-React-App/static/js/2.7eb46e68.chunk.js.LICENSE.txt"
+    "static/js/2.af4db958.chunk.js.LICENSE.txt": "/Math-Magicians-React-App/static/js/2.af4db958.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.ae5d11ee.js",
-    "static/js/2.7eb46e68.chunk.js",
+    "static/js/runtime-main.32baeffc.js",
+    "static/js/2.af4db958.chunk.js",
     "static/css/main.467c22ed.chunk.css",
-    "static/js/main.5e47a6b1.chunk.js"
+    "static/js/main.81015e83.chunk.js"
   ]
 }
