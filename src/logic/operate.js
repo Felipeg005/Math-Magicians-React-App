@@ -1,4 +1,4 @@
-import Big from '../../node_modules/big.js/big';
+import Big from 'big.js';
 
 export default function operate(numberOne, numberTwo, operation) {
   const one = Big(numberOne);

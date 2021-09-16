@@ -23,7 +23,6 @@ class Calculator extends React.Component {
     } else if (this.state.next === null && this.state.total === null) {
       document.querySelector('.display-board').innerHTML = '0';
     }
-    console.log(this.state);
   }
 
   render() {
