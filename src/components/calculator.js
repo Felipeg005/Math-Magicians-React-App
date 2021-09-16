@@ -1,10 +1,11 @@
 import React from 'react'; // eslint-disable-line
+import operate from '../logic/operate';
+import calculate from '../logic/calculate';
 
 class Calculator extends React.Component {
   render() {
     return (
-      this.props,
-      <main className='calculator-container'>
+      <main className={this.props.containerClass}>
         <div className='display-board'>0</div>
         <button className='s-button'>AC</button>
         <button className='s-button'>+/-</button>

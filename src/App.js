@@ -6,7 +6,9 @@ class App extends React.Component {
   render() {
     return (
       this.props,
-      <Calculator />
+      <>
+      <Calculator containerClass='calculator-container' />
+      </>
     );
   }
 }
