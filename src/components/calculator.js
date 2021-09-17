@@ -1,30 +1,57 @@
 import React from 'react'; // eslint-disable-line
+import calculate from '../logic/calculate';
 
 class Calculator extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      total: null,
+      next: null,
+      operation: null,
+    };
+  }
+
+  async displayBoard(e) {
+    await this.setState(calculate(this.state, e.target.innerHTML));
+    // if (((typeof this.state.next) !== 'number') || (typeof this.state.total) !== 'number') {
+    //   // this.setState({ next: null, total: null, operation: null });
+    // } else
+    if (this.state.total !== null && this.state.next === null) {
+      document.querySelector('.display-board').innerHTML = this.state.total;
+    } else if (this.state.next !== null && this.state.total !== null) {
+      document.querySelector('.display-board').innerHTML = this.state.next;
+    } else if (this.state.next !== null && this.state.total === null) {
+      document.querySelector('.display-board').innerHTML = this.state.next;
+    } else if (this.state.next === null && this.state.total === null) {
+      document.querySelector('.display-board').innerHTML = '0';
+    } else if (((typeof this.state.next) !== 'number') || (typeof this.state.total) !== 'number') {
+      this.setState({ next: null, total: null, operation: null });
+    }
+  }
+
   render() {
     return (
-      this.props,
-      <main className='calculator-container'>
+      <main className={this.props.containerClass}>
         <div className='display-board'>0</div>
-        <button className='s-button'>AC</button>
-        <button className='s-button'>+/-</button>
-        <button className='s-button'>%</button>
-        <button className='s-orange-button'>÷</button>
-        <button className='s-button'>7</button>
-        <button className='s-button'>8</button>
-        <button className='s-button'>9</button>
-        <button className='s-orange-button'>x</button>
-        <button className='s-button'>4</button>
-        <button className='s-button'>5</button>
-        <button className='s-button'>6</button>
-        <button className='s-orange-button'>-</button>
-        <button className='s-button'>1</button>
-        <button className='s-button'>2</button>
-        <button className='s-button'>3</button>
-        <button className='s-orange-button'>+</button>
-        <button className='m-button'>0</button>
-        <button className='s-button'>.</button>
-        <button className='s-orange-button'>=</button>
+        <button className='s-button' onClick={(e) => this.displayBoard(e)}>AC</button>
+        <button className='s-button' onClick={(e) => this.displayBoard(e)}>+/-</button>
+        <button className='s-button' onClick={(e) => this.displayBoard(e)}>%</button>
+        <button className='s-orange-button' onClick={(e) => this.displayBoard(e)}>÷</button>
+        <button className='s-button' onClick={(e) => this.displayBoard(e)}>7</button>
+        <button className='s-button' onClick={(e) => this.displayBoard(e)}>8</button>
+        <button className='s-button' onClick={(e) => this.displayBoard(e)}>9</button>
+        <button className='s-orange-button' onClick={(e) => this.displayBoard(e)}>x</button>
+        <button className='s-button' onClick={(e) => this.displayBoard(e)}>4</button>
+        <button className='s-button' onClick={(e) => this.displayBoard(e)}>5</button>
+        <button className='s-button' onClick={(e) => this.displayBoard(e)}>6</button>
+        <button className='s-orange-button' onClick={(e) => this.displayBoard(e)}>-</button>
+        <button className='s-button' onClick={(e) => this.displayBoard(e)}>1</button>
+        <button className='s-button' onClick={(e) => this.displayBoard(e)}>2</button>
+        <button className='s-button' onClick={(e) => this.displayBoard(e)}>3</button>
+        <button className='s-orange-button' onClick={(e) => this.displayBoard(e)}>+</button>
+        <button className='m-button' onClick={(e) => this.displayBoard(e)}>0</button>
+        <button className='s-button' onClick={(e) => this.displayBoard(e)}>.</button>
+        <button className='s-orange-button' onClick={(e) => this.displayBoard(e)}>=</button>
       </main>
     );
   }
