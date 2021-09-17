@@ -13,6 +13,9 @@ class Calculator extends React.Component {
 
   async displayBoard(e) {
     await this.setState(calculate(this.state, e.target.innerHTML));
+    // if (((typeof this.state.next) !== 'number') || (typeof this.state.total) !== 'number') {
+    //   // this.setState({ next: null, total: null, operation: null });
+    // } else
     if (this.state.total !== null && this.state.next === null) {
       document.querySelector('.display-board').innerHTML = this.state.total;
     } else if (this.state.next !== null && this.state.total !== null) {
@@ -21,6 +24,8 @@ class Calculator extends React.Component {
       document.querySelector('.display-board').innerHTML = this.state.next;
     } else if (this.state.next === null && this.state.total === null) {
       document.querySelector('.display-board').innerHTML = '0';
+    } else if (((typeof this.state.next) !== 'number') || (typeof this.state.total) !== 'number') {
+      this.setState({ next: null, total: null, operation: null });
     }
   }
 
