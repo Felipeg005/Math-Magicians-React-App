@@ -4,7 +4,7 @@
 
 ## Live Demo
 
-[Visit Live Demo Link](https://felipeg005.github.io/Math-Magicians-App/)
+[Visit Live Demo Link](https://felipeg005.github.io/Math-Magicians-React-App/)
 
 ## Getting Started
 
@@ -18,7 +18,7 @@ You can visit the Live Demo or clone the repository and open the dist/html.index
 
 ### Set-up & Install
 
-- [First clone the repo](https://github.com/Felipeg005/Math-Magicians-App/) and checkout the latest branch.
+- [First clone the repo](https://github.com/Felipeg005/Math-Magicians-React-App/) and checkout the latest branch.
 
 To install the latest release or a specific version, run one of the following commands:
 
