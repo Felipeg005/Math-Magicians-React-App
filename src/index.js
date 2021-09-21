@@ -1,12 +1,15 @@
 import React from 'react'; // eslint-disable-line
 import ReactDOM from 'react-dom';
 import './index.css';
+import { BrowserRouter } from 'react-router-dom';
 import App from './App'; // eslint-disable-line
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
+    <BrowserRouter>
     <App />
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root') // eslint-disable-line
 );
