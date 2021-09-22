@@ -13,9 +13,9 @@ const App = () => {
     <Router>
       <Nav class="nav-container"/>
       <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/calculator" component={Calculator} />
-        <Route path="/quote" component={Quote} />
+        <Route path="https://felipeg005.github.io/Math-Magicians-React-App/" exact component={Home} />
+        <Route path="https://felipeg005.github.io/Math-Magicians-React-App/calculator" component={Calculator} />
+        <Route path="https://felipeg005.github.io/Math-Magicians-React-App/quote" component={Quote} />
       </Switch>
     </Router>
   );
