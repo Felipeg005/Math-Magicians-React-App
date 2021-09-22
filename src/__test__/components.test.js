@@ -1,10 +1,15 @@
 import React from 'react';
-import {render} from '@testing-library/react';
+import { render } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 import Calculator from '../components/calculator';
-import operate from '../logic/operate';
+import Home from '../pages/home';
+import Quote from '../pages/quote';
 
 describe( 'operator.js tests', () => {
+  test('Render Home', () => {
+    const component = render(<Home />);
+    expect(component.container).toHaveTextContent('Welcome to our page!');
+  });
   test('Render Calculator', () => {
     const component = render(<Calculator />);
     expect(component.container).toHaveTextContent(`Let's do some Math!`);
@@ -12,10 +17,8 @@ describe( 'operator.js tests', () => {
     expect(component.container).toHaveTextContent('0');
     expect(component.container).toHaveTextContent('AC');
   });
-
-  test('sum', () => {
-    // operate(numberOne, numberTwo, operation)
-    expect(operate(5, 4, '+')).toBe('9');
+  test('Render Quote', () => {
+    const component = render(<Quote />);
+    expect(component.container).toHaveTextContent('Albert Einstein');
   });
-}
-)
+})
