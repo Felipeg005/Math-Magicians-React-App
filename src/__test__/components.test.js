@@ -7,11 +7,12 @@ import Quote from '../pages/quote';
 import renderer from 'react-test-renderer';
 import App from '../App';
 
-describe( 'operator.js tests', () => {
+describe( 'Test snapshot', () => {
   test('Render Home', () => {
     const component = render(<Home />);
     expect(component.container).toHaveTextContent('Welcome to our page!');
   });
+
   test('Render Calculator', () => {
     const component = render(<Calculator />);
     expect(component.container).toHaveTextContent(`Let's do some Math!`);
@@ -19,10 +20,20 @@ describe( 'operator.js tests', () => {
     expect(component.container).toHaveTextContent('0');
     expect(component.container).toHaveTextContent('AC');
   });
+
+  test('Render Calculator', () => {
+    const component = render(<App />);
+    expect(component.container).toHaveTextContent(`Home`);
+    expect(component.container).toHaveTextContent('Calculator');
+    expect(component.container).toHaveTextContent('Quote');
+
+  });
+
   test('Render Quote', () => {
     const component = render(<Quote />);
     expect(component.container).toHaveTextContent('Albert Einstein');
   });
+
   test('Snapshot', () => {
     const component = renderer.create(
       < App />);

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`operator.js tests Snapshot 1`] = `
+exports[`Test snapshot Snapshot 1`] = `
 <nav
   className="nav-container"
 >
