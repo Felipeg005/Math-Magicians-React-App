@@ -14,10 +14,10 @@ class Nav extends React.Component {
           <Link to="/Math-Magicians-React-App/" style={linkStyles}>
             <li>Home</li>
           </Link>
-          <Link to="/calculator" style={linkStyles}>
+          <Link to="/Math-Magicians-React-App/calculator" style={linkStyles}>
             <li>Calculator</li>
           </Link>
-          <Link to="/quote" style={linkStyles}>
+          <Link to="/Math-Magicians-React-App/quote" style={linkStyles}>
             <li>Quote</li>
           </Link>
         </ul>
