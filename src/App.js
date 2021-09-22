@@ -1,9 +1,9 @@
 import './App.css';
 import React from 'react'; // eslint-disable-line
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';// eslint-disable-line
 import Calculator from './components/calculator'; // eslint-disable-line
 import Home from './pages/home';
-import Nav from './components/Nav';
+import Nav from './components/Nav'; // eslint-disable-line
 import Quote from './pages/quote';
 
 const App = () => {

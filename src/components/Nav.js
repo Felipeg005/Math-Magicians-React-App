@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'; // eslint-disable-line
 
 class Nav extends React.Component {
   render() {

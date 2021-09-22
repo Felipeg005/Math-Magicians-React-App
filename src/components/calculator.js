@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'; // eslint-disable-line
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom'; // eslint-disable-line
 import calculate from '../logic/calculate';
 
 const Calculator = () => {
