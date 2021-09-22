@@ -1,16 +1,10 @@
 import './App.css';
-import React from 'react';
+import React from 'react'; // eslint-disable-line
 import Calculator from './components/calculator'; // eslint-disable-line
 
-class App extends React.Component {
-  render() {
-    return (
-      this.props,
-      <>
-      <Calculator containerClass='calculator-container' />
-      </>
-    );
-  }
-}
+const App = () => {
+  const displayCalculator = <Calculator />;
+  return displayCalculator;
+};
 
 export default App;
