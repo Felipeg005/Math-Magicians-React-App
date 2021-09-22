@@ -1,7 +1,6 @@
 import calculate from '../logic/calculate';
 
-describe( 'operator.js tests', () => {
-
+describe('operator.js tests', () => {
   test('AC', () => {
     expect(calculate({}, 'AC')).toStrictEqual({
       total: null,
@@ -16,16 +15,21 @@ describe( 'operator.js tests', () => {
       next: '0.',
       operation: null,
     };
-    expect(calculate(obj, '.')).toStrictEqual({total: null,
+    expect(calculate(obj, '.')).toStrictEqual({
+      total: null,
       next: '0.',
-      operation: null});
+      operation: null,
+    });
   });
 
   test('0', () => {
-    expect(calculate({}, '0')).toStrictEqual({"next": "0", "total": null,});
+    expect(calculate({}, '0')).toStrictEqual({
+      next: '0',
+      total: null,
+    });
   });
 
-  test('Sum 5 + 2', ()=>{
+  test('Sum 5 + 2', () => {
     const obj = {
       total: '5',
       next: '2',
@@ -34,7 +38,7 @@ describe( 'operator.js tests', () => {
     expect(calculate(obj, '=').total).toBe('7');
   });
 
-  test('Multiply 3 x 3', ()=>{
+  test('Multiply 3 x 3', () => {
     const obj = {
       total: '3',
       next: '3',
@@ -43,7 +47,7 @@ describe( 'operator.js tests', () => {
     expect(calculate(obj, '=').total).toBe('9');
   });
 
-  test('Subtract 3 - 1', ()=>{
+  test('Subtract 3 - 1', () => {
     const obj = {
       total: '3',
       next: '1',
@@ -52,7 +56,7 @@ describe( 'operator.js tests', () => {
     expect(calculate(obj, '=').total).toBe('2');
   });
 
-  test('Press 5', ()=>{
+  test('Press 5', () => {
     const obj = {
       total: '3',
       next: null,
@@ -61,7 +65,7 @@ describe( 'operator.js tests', () => {
     expect(calculate(obj, '5').next).toBe('5');
   });
 
-  test('Press +', ()=>{
+  test('Press +', () => {
     const obj = {
       total: '3',
       next: null,
@@ -69,6 +73,4 @@ describe( 'operator.js tests', () => {
     };
     expect(calculate(obj, '+').operation).toBe('+');
   });
-
-}
-)
+});

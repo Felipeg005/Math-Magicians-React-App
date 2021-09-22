@@ -1,8 +1,6 @@
-import React from 'react';
 import operate from '../logic/operate';
 
-describe( 'operator.js tests', () => {
-
+describe('operator.js tests', () => {
   test('sum', () => {
     expect(operate(5, 4, '+')).toBe('9');
     expect(operate(-5, 4, '+')).toBe('-1');
@@ -22,5 +20,4 @@ describe( 'operator.js tests', () => {
     expect(operate(5, 5, '÷')).toBe('1');
     expect(operate(5, 0, '÷')).toBe("Can't divide by 0.");
   });
-}
-)
+});
