@@ -4,6 +4,8 @@ import '@testing-library/jest-dom/extend-expect';
 import Calculator from '../components/calculator';
 import Home from '../pages/home';
 import Quote from '../pages/quote';
+import renderer from 'react-test-renderer';
+import App from '../App';
 
 describe( 'operator.js tests', () => {
   test('Render Home', () => {
@@ -20,5 +22,11 @@ describe( 'operator.js tests', () => {
   test('Render Quote', () => {
     const component = render(<Quote />);
     expect(component.container).toHaveTextContent('Albert Einstein');
+  });
+  test('Snapshot', () => {
+    const component = renderer.create(
+      < App />);
+    let tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
   });
 })

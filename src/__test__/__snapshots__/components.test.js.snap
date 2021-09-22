@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`operator.js tests Snapshot 1`] = `
+<nav
+  className="nav-container"
+>
+  <h1
+    className="logo"
+  >
+    Math Magicians
+  </h1>
+  <ul
+    className="menu-container"
+  >
+    <a
+      href="/Math-Magicians-React-App/"
+      onClick={[Function]}
+      style={
+        Object {
+          "color": "white",
+        }
+      }
+    >
+      <li>
+        Home
+      </li>
+    </a>
+    <a
+      href="/Math-Magicians-React-App/calculator"
+      onClick={[Function]}
+      style={
+        Object {
+          "color": "white",
+        }
+      }
+    >
+      <li>
+        Calculator
+      </li>
+    </a>
+    <a
+      href="/Math-Magicians-React-App/quote"
+      onClick={[Function]}
+      style={
+        Object {
+          "color": "white",
+        }
+      }
+    >
+      <li>
+        Quote
+      </li>
+    </a>
+  </ul>
+</nav>
+`;
