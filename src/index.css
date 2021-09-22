@@ -2,6 +2,26 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
+  margin: 0;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+li {
+  list-style-type: none;
+  margin: 10px;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 30px;
+  color: white;
+  margin-left: 30px;
 }
 
 .calculator-container {
@@ -9,7 +29,7 @@ body {
   grid-template-columns: repeat(4, 25%);
   grid-template-rows: repeat(6, 16.66%);
   width: 500px;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .display-board {
@@ -53,4 +73,41 @@ body {
 
 .s-orange-button:active {
   background-color: rgb(197, 96, 1);
+}
+
+.nav-container {
+  margin: 0;
+  display: flex;
+  width: 100vw;
+  background-color: rgb(94, 94, 94);
+}
+
+.menu-container {
+  display: flex;
+  margin: 17px 10px 0 auto;
+  margin-left: auto;
+  align-items: center;
+  margin-top: 11px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 19px;
+}
+
+.quote {
+  padding: 100px;
+  margin-top: 60px;
+}
+
+.home {
+  padding: 50px;
+  margin-top: 20px;
+}
+
+.title {
+  margin-top: 60px;
+  margin-left: 50px;
+}
+
+.calculator-title {
+  margin-top: 60px;
+  margin-left: -60px;
 }

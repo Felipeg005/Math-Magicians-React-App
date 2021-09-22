@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'; // eslint-disable-line
+import { BrowserRouter as Router, Route } from 'react-router-dom'; // eslint-disable-line
 import calculate from '../logic/calculate';
 
 const Calculator = () => {
@@ -22,30 +23,37 @@ const Calculator = () => {
   };
 
   return (
-    <React.Fragment>
-    <main className='calculator-container'>
-      <div className='display-board'>0</div>
-      <button className='s-button' onClick={(e) => displayBoard(e)}>AC</button>
-      <button className='s-button' onClick={(e) => displayBoard(e)}>+/-</button>
-      <button className='s-button' onClick={(e) => displayBoard(e)}>%</button>
-      <button className='s-orange-button' onClick={(e) => displayBoard(e)}>÷</button>
-      <button className='s-button' onClick={(e) => displayBoard(e)}>7</button>
-      <button className='s-button' onClick={(e) => displayBoard(e)}>8</button>
-      <button className='s-button' onClick={(e) => displayBoard(e)}>9</button>
-      <button className='s-orange-button' onClick={(e) => displayBoard(e)}>x</button>
-      <button className='s-button' onClick={(e) => displayBoard(e)}>4</button>
-      <button className='s-button' onClick={(e) => displayBoard(e)}>5</button>
-      <button className='s-button' onClick={(e) => displayBoard(e)}>6</button>
-      <button className='s-orange-button' onClick={(e) => displayBoard(e)}>-</button>
-      <button className='s-button' onClick={(e) => displayBoard(e)}>1</button>
-      <button className='s-button' onClick={(e) => displayBoard(e)}>2</button>
-      <button className='s-button' onClick={(e) => displayBoard(e)}>3</button>
-      <button className='s-orange-button' onClick={(e) => displayBoard(e)}>+</button>
-      <button className='m-button' onClick={(e) => displayBoard(e)}>0</button>
-      <button className='s-button' onClick={(e) => displayBoard(e)}>.</button>
-      <button className='s-orange-button' onClick={(e) => displayBoard(e)}>=</button>
-    </main>
-    </React.Fragment>
+    <Router>
+      <Route path='/'>
+        <React.Fragment>
+          <main>
+            <h2 className='calculator-title'>Let's do some Math!</h2>
+            <div className='calculator-container'>
+              <div className='display-board'>0</div>
+              <button className='s-button' onClick={(e) => displayBoard(e)}>AC</button>
+              <button className='s-button' onClick={(e) => displayBoard(e)}>+/-</button>
+              <button className='s-button' onClick={(e) => displayBoard(e)}>%</button>
+              <button className='s-orange-button' onClick={(e) => displayBoard(e)}>÷</button>
+              <button className='s-button' onClick={(e) => displayBoard(e)}>7</button>
+              <button className='s-button' onClick={(e) => displayBoard(e)}>8</button>
+              <button className='s-button' onClick={(e) => displayBoard(e)}>9</button>
+              <button className='s-orange-button' onClick={(e) => displayBoard(e)}>x</button>
+              <button className='s-button' onClick={(e) => displayBoard(e)}>4</button>
+              <button className='s-button' onClick={(e) => displayBoard(e)}>5</button>
+              <button className='s-button' onClick={(e) => displayBoard(e)}>6</button>
+              <button className='s-orange-button' onClick={(e) => displayBoard(e)}>-</button>
+              <button className='s-button' onClick={(e) => displayBoard(e)}>1</button>
+              <button className='s-button' onClick={(e) => displayBoard(e)}>2</button>
+              <button className='s-button' onClick={(e) => displayBoard(e)}>3</button>
+              <button className='s-orange-button' onClick={(e) => displayBoard(e)}>+</button>
+              <button className='m-button' onClick={(e) => displayBoard(e)}>0</button>
+              <button className='s-button' onClick={(e) => displayBoard(e)}>.</button>
+              <button className='s-orange-button' onClick={(e) => displayBoard(e)}>=</button>
+            </div>
+          </main>
+        </React.Fragment>
+      </Route>
+    </Router>
   );
 };
 
