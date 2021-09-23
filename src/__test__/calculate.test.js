@@ -100,7 +100,7 @@ describe('operator.js tests', () => {
     };
     expect(calculate(obj, '=').total).toBe("Can't divide by 0.");
   });
-  
+
   test('Press +/-', () => {
     const obj = {
       total: '3',
@@ -145,5 +145,4 @@ describe('operator.js tests', () => {
     };
     expect(calculate(obj, '=').total).toBe('10');
   });
-
 });
