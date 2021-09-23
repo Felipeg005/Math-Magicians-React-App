@@ -9,12 +9,14 @@
     "ecmaVersion": 2018,
     "sourceType": "module"
   },
-  "extends": ["airbnb-base"],
+  "extends": ["airbnb-base", "plugin:react/recommended"],
   "rules": {
     "no-shadow": "off",
     "no-param-reassign": "off",
     "eol-last": "off",
-    "linebreak-style": 0
+    "linebreak-style": 0,
+    "react/prop-types": "off",
+    "react/no-unescaped-entities": "off"
   },
   "ignorePatterns": [
     "dist/",

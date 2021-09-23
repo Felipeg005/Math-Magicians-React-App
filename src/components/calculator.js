@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react'; // eslint-disable-line
-import { BrowserRouter as Router, Route } from 'react-router-dom'; // eslint-disable-line
+import React, { useEffect, useState } from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import calculate from '../logic/calculate';
 
 const Calculator = () => {
@@ -27,7 +27,7 @@ const Calculator = () => {
       <Route path='/'>
         <React.Fragment>
           <main>
-            <h2 className='calculator-title'>Let's do some Math!</h2>
+            <h2 className='calculator-title'>Let`s do some Math!</h2>
             <div className='calculator-container'>
               <div className='display-board'>0</div>
               <button className='s-button' onClick={(e) => displayBoard(e)}>AC</button>
