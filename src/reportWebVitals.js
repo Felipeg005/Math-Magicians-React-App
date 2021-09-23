@@ -1,6 +1,8 @@
-const reportWebVitals = onPerfEntry => { // eslint-disable-line
+const reportWebVitals = (onPerfEntry) => {
   if (onPerfEntry && onPerfEntry instanceof Function) {
-    import('web-vitals').then(({ getCLS, getFID, getFCP, getLCP, getTTFB }) => { // eslint-disable-line
+    import('web-vitals').then(({
+      getCLS, getFID, getFCP, getLCP, getTTFB,
+    }) => {
       getCLS(onPerfEntry);
       getFID(onPerfEntry);
       getFCP(onPerfEntry);
