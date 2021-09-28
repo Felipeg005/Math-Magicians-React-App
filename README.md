@@ -4,7 +4,9 @@
 
 ## Live Demo
 
-[Visit Live Demo Link](https://felipeg005.github.io/Math-Magicians-React-App/)
+- Gh-Pages: [Visit Live Demo Link](https://felipeg005.github.io/Math-Magicians-React-App/)
+- Heroku: [Visit Live Demo Link](https://warm-hollows-36572.herokuapp.com/Math-Magicians-React-App/)
+- Netlify: [Visit Live Demo Link](https://warm-hollows-36572.herokuapp.com/Math-Magicians-React-App/)
 
 ## Getting Started
 
