@@ -9,7 +9,6 @@
     "ecmaVersion": 2018,
     "sourceType": "module"
   },
-  "extends": ["plugin:react/recommended"],
   "rules": {
     "no-shadow": "off",
     "no-param-reassign": "off",
